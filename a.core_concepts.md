@@ -19,6 +19,7 @@ kubernetes.io > Documentation > Tasks > Access Applications in a Cluster > [Use 
 ```bash
 kubectl create namespace mynamespace
 kubectl run nginx --image=nginx --restart=Never -n mynamespace
+kubectl run --generator=run-pod/v1 nginx --image=nginx --restart=Never -n mynamespace
 ```
 
 </p>
